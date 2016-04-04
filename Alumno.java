@@ -40,8 +40,9 @@ public class Alumno
         }
         return media/notas.size();
     }
+    
     /**
-     * Metodo que devuelve true si estas aprobado y flase si estas suspenso
+     * Metodo que devuelve true si estas aprobado y false si estas suspenso
      */
     public boolean aprobado()
     {
@@ -50,5 +51,16 @@ public class Alumno
             aprobado = true;
         }
         return aprobado;
+    }
+    
+    /**
+     * Método que muestra los datos del alumno.
+     */
+    public String toString()
+    {
+        String alumno = null;
+        alumno = "" + "Nombre: " + nombre + "\nEdad  : " + edad + "\nNº en clase: " + numeroClase +
+                "\nMedia: " + media() + "\nEsta aprobado: " + aprobado();
+        return alumno;
     }
 }
