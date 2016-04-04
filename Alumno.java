@@ -19,6 +19,7 @@ public class Alumno
         this.edad = edad;
         numeroClase+=1;
         notas = new ArrayListInt();
+        notas.add(5);
     }
     
     /**
